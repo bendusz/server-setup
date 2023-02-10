@@ -1,0 +1,1 @@
+﻿Add-Computer -DomainName infra.local -Credential infra\TopG -Verbose -Restart -Force
