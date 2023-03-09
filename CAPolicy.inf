@@ -1,0 +1,28 @@
+[Version]
+	Signature="$Windows NT$"
+
+[InternalPolicy]
+  OID=1.2.3.4.1234.1.69.5
+	Notice="Legal Policy Statement"
+  URL=https://az-ca1.infra.dev/pki/cps.txt
+  
+[Certsrv_Server]
+	RenewalKeyLength=4096
+	RenewalValidityPeriod=Years
+	RenewalValidityPeriodUnits=10
+	CRLPeriod=Year
+	CRLPeriodUnits=2
+	CRLDeltaPeriod=Weeks
+	CRLDeltaPeriodUnits=26
+	LoadDefaultTemplates=False
+	AlternateSignatureAlgorithm=0
+	ForceUTF8=0
+	EnableKeyCounting=0
+
+[BasicConstraintsExtension]
+	PathLength=2
+	Critical=Yes
+
+[CRLDistributionPoint]
+
+[AuthorityInformationAccess]
