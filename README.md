@@ -9,5 +9,11 @@ To run the main script that installs the pre-requisites for Windows Terminal to 
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/bendusz/server-setup/main/setup.ps1'))
 ```
 
+To add the CAPolicy.inf to the Windows/System32 subdirectory run the next command:
+
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/bendusz/server-setup/main/CAP_Install.ps1'))
+```
+
 # Rest
 The rest of the scripts are just a quick markdowns of commonly used codes.
