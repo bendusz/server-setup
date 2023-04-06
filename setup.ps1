@@ -5,4 +5,4 @@ Add-AppxPackage Microsoft.VCLibs.x86.14.00.Desktop.appx
 
 ### Chocolatey script
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));
-choco install microsoft-windows-terminal powershell-core dotnetfx vscode notepadplusplus brave librewolf --confirm
+choco install microsoft-windows-terminal powershell-core dotnetfx vscode notepadplusplus brave --confirm
