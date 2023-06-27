@@ -22,5 +22,3 @@ $domainMode = 7   # Windows Server 2019 domain functional level
 $forestMode = 7   # Windows Server 2019 forest functional level
 
 Install-ADDSForest -DomainName $domainName -DomainNetbiosName $netBIOSName -SafeModeAdministratorPassword $dsrmPassword -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\NTDS" -SysvolPath "C:\Windows\SYSVOL" -NoRebootOnCompletion:$false -Force:$true -CreateDNSDelegation:$false -DomainMode $domainMode -ForestMode $forestMode -InstallDns -Confirm:$false
-# Restart the server
-Restart-Computer -Force
