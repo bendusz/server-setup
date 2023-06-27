@@ -1,7 +1,7 @@
 # Ensure PowerShell is running with elevated privileges
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
     Write-Host "Please run this script with administrative privileges."
-    exit
+    Read-Host -Prompt "Press any key to continue"
 }
 
 # Install the Active Directory Domain Services and DNS Server roles
