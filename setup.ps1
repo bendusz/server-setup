@@ -1,7 +1,7 @@
 # Provide URL to newest version of Windows Terminal Application
 $url = 'https://github.com/microsoft/terminal/releases/download/v1.17.11461.0/Microsoft.WindowsTerminal_1.17.11461.0_8wekyb3d8bbwe.msixbundle'
 $split = Split-Path $url -Leaf
-$package = Get-AppxPackage | Where-Object { $_.Name -like "Microsoft.VCLibs.140.00.UWPDesktop" })
+$package = Get-AppxPackage | Where-Object { $_.Name -like "Microsoft.VCLibs.140.00.UWPDesktop" }
 
 # Prerequisites
 # Check if it has been installed already
