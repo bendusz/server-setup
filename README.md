@@ -20,5 +20,11 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/bendusz/server-setup/main/installNewADDS.ps1'))
 ```
 
+### Join a Server as DC to an existing Domain
+
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/bendusz/server-setup/main/joinServerAsDCps1'))
+```
+
 # Rest
 The rest of the scripts are just a quick markdowns of commonly used codes.
